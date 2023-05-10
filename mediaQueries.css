@@ -1,0 +1,241 @@
+@media(max-width:1140px) {
+    .molecules {
+        display: none;
+
+    }
+
+    .navbar .menubar {
+        font-size: 16px;
+    }
+
+    .navbar.sticky .menubar li a {
+        color: var(--lightColor);
+    }
+
+    .navbar .menubar .main__btn:hover {
+        background-color: var(--lightColor);
+        color: var(--darkColor);
+
+    }
+
+    .navbar .menubar .main__btn::before {
+        background-color: var(--lightColor);
+
+    }
+
+    .middle__content h1 {
+        font-size: 18px;
+        padding: 0.25rem;
+    }
+
+    .middle__content p {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 2rem;
+        padding: 0.25rem;
+    }
+
+    .middle__content button {
+        font-size: 12px;
+        font-weight: 600;
+
+    }
+
+    .amazing__feature .amazing__feature__content {
+        flex-direction: column;
+    }
+
+    .amazing__feature .amazing__feature__content .left {
+        margin-top: 5rem;
+    }
+
+    .contact__us .contact__us__content {
+        flex-direction: column;
+        height: 47rem;
+        width: 90%;
+
+
+    }
+
+    .contact__us__content .right {
+        background: var(--primaryColor);
+        clip-path: none;
+        width: 100%;
+
+    }
+
+    .contact__us__content .left {
+        width: 100%;
+        overflow-y: hidden
+    }
+
+    .contact__us__content .left button {
+        margin-bottom: 1rem;
+    }
+
+    .footer .footer__content .top__footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .top__footer .righ__footer .footer__logo {
+        flex-direction: column;
+    }
+
+    .footer .footer__content .left__footer {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .righ__footer .footer__right_content {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .main_background svg {
+        right: 1%;
+    }
+
+    .Sign-up .right {
+        width: 50%;
+        margin: 1rem 2rem;
+    }
+}
+
+
+@media (max-width:900px) {
+    .navbar .menubar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100vh;
+        width: 20rem;
+        z-index: 1000 !important;
+        background-color: var(--darkColor);
+        flex-direction: column;
+        gap: 0.5rem;
+        opacity: 0;
+        align-items: flex-start;
+        padding: 0 0.5rem;
+        pointer-events: none;
+        transition: all 150ms;
+    }
+
+    .navbar {
+        justify-content: space-between;
+        padding: 0 1rem;
+    }
+
+    .navbar .menubar li a:hover {
+        color: var(--lightColor);
+    }
+
+
+    #toggle__menubar {
+        display: block;
+    }
+
+    #openMobilemenubar:checked~.menubar {
+        opacity: 1;
+        pointer-events: visible;
+        right: 0;
+        width: 80%;
+    }
+
+    .Services .bottom .bottom__content {
+        flex-direction: column;
+    }
+
+    .Sign-up .left .left__content {
+        margin-top: 6rem;
+    }
+
+
+}
+
+@media (max-width:912px) {
+    .Sign-up .left {
+        display: none;
+    }
+
+    .Sign-up .right {
+        width: 80%;
+        margin: 1rem auto;
+    }
+
+    .main_background svg {
+        display: none;
+    }
+
+}
+
+@media (max-width:816px) {
+    .middle__content {
+        width: 80%;
+    }
+
+    .Sign-up .right {
+        margin: 2rem 1rem;
+        width: 90%;
+    }
+
+
+}
+
+
+@media(max-width:520px) {
+    .amazing__feature .amazing__feature__content .right {
+        flex-direction: column;
+    }
+
+    .amazing__feature .amazing__feature__content .left {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .footer .footer__content .bottom__footer {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .packages {
+        padding: 3rem 0rem;
+    }
+
+    .packages .content {
+        width: 100%;
+    }
+
+    .packages .packages__articles {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .packages .packages__articles .package__description {
+        text-align: center;
+    }
+
+    .packages .content .bottom {
+        flex-direction: column;
+    }
+
+    .packages .content .bottom .bottom__span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .packages .content .bottom .main__btn {
+        width: 70%;
+        padding: 1rem;
+    }
+
+
+}
