@@ -1,0 +1,174 @@
+@import url('https://v1.fontapi.ir/css/Shabnam');
+
+
+:root {
+    --primaryColor: #407bff;
+    --secondaryColor: #ff00d6;
+    --lightColor: #fafafa;
+    --darkColor: #4a4a4a;
+    --lightColor2: #e0e0e0;
+    --lightColor3: #616161;
+}
+
+* {
+    box-sizing: border-box;
+    direction: rtl;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Shabnam, sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main__btn {
+    position: relative;
+    color: var(--darkColor);
+    border: none;
+    border-radius: 3rem;
+    background-color: var(--lightColor);
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    overflow: hidden;
+    z-index: 1;
+    transition: all ease 150ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    gap: 0.25rem;
+}
+
+.main__btn a {
+    text-decoration: none;
+}
+
+.main__btn::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 3rem;
+    background-color: var(--darkColor);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    transform: scale(0);
+    transform-origin: left;
+    transition: all ease 150ms;
+}
+
+.main__btn:hover::before {
+    transform: scale(1);
+}
+
+.main__btn:hover {
+    color: var(--lightColor);
+    background-color: transparent;
+
+}
+
+.middle__content-btn {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.main__outline-btn {
+    position: relative;
+    color: var(--lightColor);
+    border: solid 2px var(--lightColor);
+    border-radius: 3rem;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    overflow: hidden;
+    z-index: 1;
+    transition: all ease 150ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    gap: 0.25rem;
+}
+
+.main__outline-btn a {
+    text-decoration: none;
+}
+
+.main__outline-btn::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 3rem;
+    background-color: var(--darkColor);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    transform: scale(0);
+    transform-origin: left;
+    transition: all ease 150ms;
+}
+
+.main__outline-btn:hover::before {
+    transform: scale(1);
+}
+
+.main__outline-btn:hover {
+    color: var(--lightColor);
+
+}
+
+.middle__content {
+    position: absolute;
+    text-align: center;
+    width: 50rem;
+    top: 45%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+.middle__content h1 {
+    padding: 1rem;
+    line-height: 3rem;
+    color: var(--lightColor);
+}
+
+.middle__content p {
+    padding: 1rem;
+    line-height: 2rem;
+    color: var(--lightColor);
+}
+
+.middle__content-btn button:last-child i {
+    font-size: 16px;
+}
+
+hr {
+    border: 1px solid var(--primaryColor);
+    border-radius: 3rem;
+    width: 18rem;
+    margin: 1rem ;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
