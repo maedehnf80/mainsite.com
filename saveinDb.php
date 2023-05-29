@@ -32,7 +32,11 @@
 		
 		// Performing insert query execution
 		// here our table name is college
+<<<<<<< HEAD
 		$sql = "INSERT INTO user VALUES ('$first_name',
+=======
+		$sql = "INSERT INTO user VALUES ('','$first_name',
+>>>>>>> cdf829fd8ab97f24afa98d8ed0c4317daae001d1
 			'$last_name','$name','$password','$email','$phonenumber','$city')";
 		
 		if(mysqli_query($conn, $sql)){
